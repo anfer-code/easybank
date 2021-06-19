@@ -1,0 +1,8 @@
+header.header 
+			.logo-container: img(src="./images/logo.svg", alt="Logo Easybank")
+			nav.header__nav 
+				.header__icon: span
+				ul.header__options
+					each item in navOptions 
+						li: a(href="#")=item 
+				a(href="#" class="button") Request Invite

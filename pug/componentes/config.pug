@@ -1,0 +1,28 @@
+-var navOptions = ["Home", "About", "Contact", "Blog", "Careers"]
+-var footerOpt = ["About us", "Contact", "Blog", "Careers", "Support", "Privacy Policy"]
+
+-var title1 = "Next generation digital banking"
+-var title2 ="Why choose Easybank"
+-var subtitles2 = ["Online Banking", "Simple Budgeting", "Fast Onboarding", "Open API"]
+-var title3 = "Lastest Articles"
+-var subtitlesArticle = ["Receive money in any currency with no fees", "Treat yourself without worrying about money", "Take your Easybank card wherever you go", "Our invite-only Beta accounts are now live!"]
+-var titles = [title1,title2 , title3]
+
+-var imagenesIcon = ["icon-online.svg", "icon-budgeting.svg", "icon-onboarding.svg", "icon-api.svg"]
+-var imagenes = ["image-currency.jpg", "image-restaurant.jpg", "image-plane.jpg", "image-confetti.jpg"]
+-var imagenesRS = ["icon-facebook.svg", "icon-instagram.svg", "icon-pinterest.svg", "icon-twitter.svg", "icon-youtube.svg"]
+
+mixin card(imagen, tituloImg, titulo, texto)
+	.card 
+		img(src="/images/"+imagen, alt= tituloImg)
+		h3= titulo 
+		p= texto
+
+mixin article(imagen, author, title, text)
+	.articles__container 
+		figure: img(src="/images/"+imagen, alt="Imagen")
+		.articles__info 
+			figcaption=author 
+			h4=title 
+			p=text
+		
