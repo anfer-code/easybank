@@ -14,13 +14,13 @@
 
 mixin card(imagen, tituloImg, titulo, texto)
 	.card 
-		img(src="/images/"+imagen, alt= tituloImg)
+		img(src="./images/"+imagen, alt= tituloImg)
 		h3= titulo 
 		p= texto
 
 mixin article(imagen, author, title, text)
 	.articles__container 
-		figure: img(src="/images/"+imagen, alt="Imagen")
+		figure: img(src="./images/"+imagen, alt="Imagen")
 		.articles__info 
 			figcaption=author 
 			h4=title 
