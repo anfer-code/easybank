@@ -1,0 +1,50 @@
+.generation {
+    position: relative;
+    @include flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &__bg {
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        position: relative;
+        height: 375px;
+        @include flex;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            top: -133px;
+            max-width: 430px;
+            min-width: 288px;
+        }
+    }
+
+    &__info {
+        min-height: 350px;
+        padding-top: 30px;
+        text-align: center;
+
+        .container {
+            @include flex;
+            flex-direction: column;
+            min-height: inherit;
+        }
+        
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 400;
+            color: $color-footer;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-bottom: 30px;
+        }
+    }
+}

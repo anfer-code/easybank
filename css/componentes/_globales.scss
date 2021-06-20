@@ -1,0 +1,56 @@
+$color-primario: hsl(136, 65%, 51%);
+$color-footer: hsl(233, 26%, 24%);
+$color-variacion: hsl(192, 70%, 51%);
+$blanco: hsl(0, 0%, 100%);
+$gray: hsl(233, 8%, 62%);
+$gray-light: hsl(220, 16%, 96%);
+$gray-veryLight:hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,h2,h3 {
+    font-weight: 400;
+    color: $color-footer;
+}
+
+body {  
+    font-size: 1.8rem;
+    font-family: 'Public Sans', sans-serif;
+    color: $gray;
+}
+
+img {
+    width: 100%;
+}
+
+@mixin hide {
+    display: none;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    border-radius: 30px;
+    color: $blanco;
+    font-weight: 700;
+    text-decoration: none;
+}

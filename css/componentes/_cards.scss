@@ -1,0 +1,45 @@
+.cards {
+    background-color: $gray-light;
+    padding: 50px 0;
+
+    &__info {
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+        }
+    }
+    
+    &__container {
+        @include flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .card {
+        height: 215px;
+        width: 100%;
+        min-width: 288px;
+        max-width: 350px;
+        @include flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        img {
+            width: 70px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+.header {
+    position: relative;
+    z-index: 3;
+    min-width: 288px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: $blanco;
+
+    .container {
+        height: inherit;
+        @include flex;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    &__icon span{
+        display: block;
+        width: 31px;
+        height: 15px;
+        background-image: url(../images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__options {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        height: 250px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+        background-color: $blanco;
+        @include hide;
+        li {
+            list-style: none;
+            a {
+            display: inline-block;
+            padding: 10px 0;
+            height: 40px;
+            min-width: 66px;
+            text-decoration: none;
+            color: $color-footer;
+            @include hide;
+            &:hover {
+                border-bottom: 2px solid $color-primario;
+            } 
+        }
+        }
+    }
+
+    .button {
+        display: none;
+    }
+}
