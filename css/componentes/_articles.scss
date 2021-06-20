@@ -1,0 +1,51 @@
+.articles {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+    background-color: $gray-veryLight;
+
+    .container {
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px
+
+    }
+
+    &__title {
+        @extend .cards__title;
+        margin-bottom: 30px;
+    }
+
+    &__container {
+        min-width: 288px;
+        min-width: 300px;
+        width: 100%;
+        max-width: 380px;
+        height: 400px;
+        margin-bottom: 20px;
+
+        img {
+            height: 200px
+        }   
+    }
+
+    &__info {
+        background-color: white;
+        padding: 20px;
+        height: 200px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        figcaption {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}

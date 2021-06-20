@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 400;
   color: #2d314d;
 }
@@ -150,13 +150,13 @@ img {
 .cards__info {
   margin-bottom: 50px;
 }
-.cards__info h2 {
-  font-size: 3.2rem;
-  margin-bottom: 20px;
-}
 .cards__info p {
   font-size: 1.5rem;
   line-height: 2.4rem;
+}
+.cards__title, .articles__title {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
 }
 .cards__container {
   display: flex;
@@ -181,6 +181,50 @@ img {
 .cards .card p {
   font-size: 1.5rem;
   line-height: 2.4rem;
+}
+
+.articles {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fafafa;
+}
+.articles .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.articles__title {
+  margin-bottom: 30px;
+}
+.articles__container {
+  min-width: 288px;
+  min-width: 300px;
+  width: 100%;
+  max-width: 380px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.articles__container img {
+  height: 200px;
+}
+.articles__info {
+  background-color: white;
+  padding: 20px;
+  height: 200px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.articles__info figcaption {
+  font-size: 1.1rem;
+}
+.articles__info p {
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
