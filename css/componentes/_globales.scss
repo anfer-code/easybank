@@ -31,13 +31,18 @@ img {
     width: 100%;
 }
 
-@mixin hide {
+.hide {
     display: none;
 }
 
 @mixin flex {
     display: flex;
     align-items: center;
+}
+
+@mixin bg {
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .container {
@@ -47,10 +52,19 @@ img {
 }
 
 .button {
+    display: inline-block;
     padding: 15px 30px;
     background: linear-gradient(to right, #31d35c, #2bb7da);
     border-radius: 30px;
     color: $blanco;
     font-weight: 700;
     text-decoration: none;
+}
+
+.bg-close {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon-close.svg);
+    @include bg;
 }

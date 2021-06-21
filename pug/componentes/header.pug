@@ -2,8 +2,8 @@ header.header
 	.container 
 		.logo-container: img(src="./images/logo.svg", alt="Logo Easybank")
 		nav.header__nav 
-			.header__icon: span
-			ul.header__options
+			.header__icon: span.header__icon--span#span
+			ul.header__options#header__option.hide
 				each item in navOptions 
 					li: a(href="#")=item 
-			a(href="#" class="button") Request Invite
+			a(href="#" class="button hide" id="buton") Request Invite

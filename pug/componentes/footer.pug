@@ -1,13 +1,16 @@
 footer.footer 
-		section.footer__top 
-			.footer__logo: img(src="./images/logo.svg", alt="logo")
-			ul.footer__rs 
-				each item in imagenesRS
-					li
-						a(href="#"): img(src="./images/"+item, alt="") 
-		footer.footer__bot 
-			ul 
-				each item in footerOpt
-					li: a(href="#")=item 
-			a(href="#" class="button") Request Invite 
-			p © Easybank. All Rights Reserved
+	section.footer__top 
+		.footer__logo
+			a(href="#")
+				i 
+				span easybank  
+		ul.footer__rs 
+			each item in imagenesRS
+				li
+					a(href="#"): img(src="./images/"+item, alt="") 
+	footer.footer__bot 
+		ul 
+			each item in footerOpt
+				li: a(href="#")=item 
+		a(href="#" class="button") Request Invite 
+		p © Easybank. All Rights Reserved
