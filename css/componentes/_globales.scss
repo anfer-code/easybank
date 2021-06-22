@@ -59,6 +59,11 @@ img {
     color: $blanco;
     font-weight: 700;
     text-decoration: none;
+
+    &:hover {
+        filter: brightness(125%);
+        transition: ease-in-out .3s all;
+    }
 }
 
 .bg-close {
@@ -67,4 +72,8 @@ img {
     height: 25px;
     background-image: url(../images/icon-close.svg);
     @include bg;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

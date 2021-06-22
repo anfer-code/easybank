@@ -1,0 +1,32 @@
+@import "componentes/globales";
+
+.header {
+    .header__options {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+        background-color: transparent;
+        height: auto;
+        box-shadow: none;
+
+        // li {
+        // }
+
+        a {
+            color: $gray;
+            &:hover {
+                border-bottom: 2px solid $color-primario;
+                color: $color-footer;
+                transition: ease-in-out .1s all;
+            } 
+        }
+    }
+
+    &__icon {
+        display: none;
+    }
+    
+    .button {
+        display: inline-block;
+    }
+}

@@ -42,6 +42,10 @@ img {
   font-weight: 700;
   text-decoration: none;
 }
+.button:hover {
+  filter: brightness(125%);
+  transition: ease-in-out 0.3s all;
+}
 
 .bg-close {
   display: block;
@@ -50,6 +54,9 @@ img {
   background-image: url(../images/icon-close.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bg-close:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -75,6 +82,9 @@ img {
   background-image: url(../images/icon-hamburger.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.header__icon--span:hover {
+  cursor: pointer;
 }
 .header__options {
   position: absolute;
@@ -221,9 +231,8 @@ img {
 }
 .articles__container {
   min-width: 288px;
-  min-width: 300px;
   width: 100%;
-  max-width: 380px;
+  max-width: 300px;
   height: 400px;
   margin-bottom: 20px;
 }
@@ -244,6 +253,13 @@ img {
 }
 .articles__info p {
   font-size: 1.3rem;
+}
+.articles a {
+  text-decoration: none;
+}
+.articles h4:hover {
+  color: #31d35c;
+  transition: ease-in-out 0.3s all;
 }
 
 .footer {
@@ -294,6 +310,14 @@ img {
 .footer__rs li:last-child {
   margin-right: 0;
 }
+.footer__rs li i {
+  font-size: 3rem;
+  color: white;
+}
+.footer__rs li i:hover {
+  color: #31d35c;
+  transition: ease-in-out 0.3s all;
+}
 .footer__bot ul {
   margin-bottom: 40px;
 }
@@ -303,6 +327,8 @@ img {
 }
 .footer__bot ul a:hover {
   text-decoration: underline;
+  color: #31d35c;
+  transition: ease-in-out 0.3s all;
 }
 .footer__bot li {
   list-style: none;

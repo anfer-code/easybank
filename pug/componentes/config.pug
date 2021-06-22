@@ -10,7 +10,7 @@
 
 -var imagenesIcon = ["icon-online.svg", "icon-budgeting.svg", "icon-onboarding.svg", "icon-api.svg"]
 -var imagenes = ["image-currency.jpg", "image-restaurant.jpg", "image-plane.jpg", "image-confetti.jpg"]
--var imagenesRS = ["icon-facebook.svg", "icon-instagram.svg", "icon-pinterest.svg", "icon-twitter.svg", "icon-youtube.svg"]
+-var imagenesRS = ["facebook", "instagram", "pinterest", "twitter", "youtube"]
 
 mixin card(imagen, tituloImg, titulo, texto)
 	.card 
@@ -23,6 +23,6 @@ mixin article(imagen, author, title, text)
 		figure: img(src="./images/"+imagen, alt="Imagen")
 		.articles__info 
 			figcaption=author 
-			h4=title 
+			a(href="#"): h4=title 
 			p=text
 		
