@@ -1,0 +1,161 @@
+@import "componentes/globales";
+
+body {
+    font-size: 1.7rem;
+}
+
+.header {
+    .header__options {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+        background-color: transparent;
+        height: auto;
+        box-shadow: none;
+        padding: 0 10px;
+
+        li {
+            margin-right: 10px;
+            height: auto;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a {
+            color: $gray;
+            &:hover {
+                border-bottom: 2px solid $color-primario;
+                color: $color-footer;
+                transition: ease-in-out .1s all;
+            } 
+        }
+    }
+
+    
+
+    &__icon {
+        display: none;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    
+    
+}
+
+.generation {
+    flex-direction: row-reverse;
+    height: 450px;
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    p:hover {
+        background-color: $color-footer;
+        transition: ease-in-out .3s all;
+    }
+    
+
+    &__bg {
+        height: 450px;
+        background: url(../images/bg-intro-desktop.svg) #fff;
+        background-position: -53px;
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        flex-basis: calc(50% - 20px);
+
+        img {
+            top: -15px;
+            right: 20px;
+        }
+    }
+
+   
+}
+
+.generation__info {
+        
+
+        .container {
+            align-items: flex-start;
+            width: 75%;
+            text-align: left;
+
+        }
+
+        .container > h1,p {
+            width: 55%;
+        }
+
+        h1 {
+            font-size: 3.8rem;
+
+        }
+}
+
+.cards {
+        .card {
+            max-width: 400px;
+            margin-right: 40px;
+        }
+
+    .card > img, h3 {
+        margin-bottom: 25px ;
+    }
+    
+}
+
+/*articles*/
+
+.articles__container {
+    max-width: 370px;
+    height: 430px;
+}
+
+.articles__info {
+    height: 230px;
+}
+
+
+/*Footer*/
+
+.footer {
+
+    .container {
+        flex-direction: row;
+        text-align: start;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        justify-content: space-between;
+        margin-bottom: 0;
+        margin-right: 130px;
+    }
+
+    &__logo {
+        margin-bottom: 35px;
+    }
+
+    &__bot {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+            margin-right: 20px;
+        }
+
+    }
+
+    &__bot--finally {
+        text-align: end;
+    }
+}
