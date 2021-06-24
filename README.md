@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/anfer-code/easybank](https://github.com/anfer-code/easybank)
+- Live Site URL: [https://anfer-code.github.io/easybank/index.html](https://anfer-code.github.io/easybank/index.html)
 
 ## My process
 
