@@ -17,6 +17,7 @@ body {
   font-size: 1.8rem;
   font-family: "Public Sans", sans-serif;
   color: #9698a6;
+  overflow-x: hidden;
 }
 
 img {
@@ -111,10 +112,11 @@ img {
   height: 40px;
   min-width: 66px;
   text-decoration: none;
-  color: #2d314d;
+  color: #9698a6;
 }
 .header__options li a:hover {
   border-bottom: 2px solid #31d35c;
+  color: #2d314d;
 }
 .header .button {
   display: none;
@@ -190,14 +192,14 @@ img {
 .cards__container {
   display: flex;
   align-items: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .cards .card {
   height: 215px;
   width: 100%;
-  min-width: 288px;
-  max-width: 350px;
+  max-width: 300px;
+  min-width: 280px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -266,11 +268,13 @@ img {
   width: 100%;
   height: 100%;
   padding: 30px 0;
+  background-color: #2d314d;
+}
+.footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #2d314d;
 }
 .footer__top {
   margin-bottom: 30px;
@@ -318,9 +322,6 @@ img {
   color: #31d35c;
   transition: ease-in-out 0.3s all;
 }
-.footer__bot ul {
-  margin-bottom: 40px;
-}
 .footer__bot ul a {
   color: #fafafa;
   text-decoration: none;
@@ -335,6 +336,7 @@ img {
   margin-bottom: 15px;
 }
 .footer__bot .button {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 .footer__bot p {

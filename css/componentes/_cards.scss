@@ -18,15 +18,15 @@
     
     &__container {
         @include flex;
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
     .card {
         height: 215px;
         width: 100%;
-        min-width: 288px;
-        max-width: 350px;
+        max-width: 300px;
+        min-width: 280px;
         @include flex;
         flex-direction: column;
         justify-content: space-between;
